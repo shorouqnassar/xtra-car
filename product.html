@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details - XTRA CAR</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Inter',sans-serif;
+      background:#f4f7fb;
+      color:#111;
+    }
+
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:25px 0;
+    }
+
+    .logo{
+      font-size:30px;
+      font-weight:800;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:20px;
+      list-style:none;
+    }
+
+    .nav-links a{
+      text-decoration:none;
+      color:#111;
+      font-weight:600;
+    }
+
+    .product-page{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:50px;
+      align-items:center;
+      margin:60px 0;
+    }
+
+    .product-image img{
+      width:100%;
+      border-radius:30px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .product-info h1{
+      font-size:55px;
+      margin-bottom:15px;
+    }
+
+    .price{
+      font-size:40px;
+      color:#2563eb;
+      font-weight:800;
+      margin-bottom:20px;
+    }
+
+    .product-info p{
+      line-height:1.9;
+      color:#555;
+      margin-bottom:25px;
+    }
+
+    .features{
+      margin-bottom:30px;
+    }
+
+    .features li{
+      margin-bottom:10px;
+      color:#333;
+    }
+
+    .btn{
+      background:#2563eb;
+      color:white;
+      border:none;
+      padding:15px 35px;
+      border-radius:40px;
+      font-weight:700;
+      cursor:pointer;
+      transition:.3s;
+    }
+
+    .btn:hover{
+      background:#1d4ed8;
+    }
+
+    .quantity{
+      margin-bottom:25px;
+    }
+
+    .quantity input{
+      width:80px;
+      padding:10px;
+      border-radius:10px;
+      border:1px solid #ddd;
+      font-size:18px;
+    }
+
+    footer{
+      text-align:center;
+      padding:40px;
+      color:#777;
+    }
+
+    @media(max-width:768px){
+
+      .product-info h1{
+        font-size:40px;
+      }
+
+      nav{
+        flex-direction:column;
+        gap:20px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <nav>
+
+    <div class="logo">🚴 XTRA Bicycle</div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+    </ul>
+
+  </nav>
+
+  <div class="product-page">
+
+    <div class="product-image">
+
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop">
+
+    </div>
+
+    <div class="product-info">
+
+      <h1>Mountain X1</h1>
+
+      <div class="price">$1299</div>
+
+      <p>
+        Mountain X1 is designed for riders who seek adventure,
+        durability and high performance on every terrain.
+      </p>
+
+      <ul class="features">
+
+        <li>✔ Lightweight Aluminum Frame</li>
+        <li>✔ Hydraulic Disc Brakes</li>
+        <li>✔ 21-Speed Transmission</li>
+        <li>✔ Premium Suspension System</li>
+
+      </ul>
+
+      <div class="quantity">
+
+        <label>Quantity:</label><br><br>
+
+        <input type="number" value="1" min="1">
+
+      </div>
+
+      <button class="btn">
+        Add To Cart
+      </button>
+
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 XTRA Bicycle — All Rights Reserved
+  </footer>
+
+</div>
+
+</body>
+</html>

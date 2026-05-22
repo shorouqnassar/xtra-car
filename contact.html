@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - XTRA CAR </title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Inter',sans-serif;
+      background:#f4f7fb;
+      color:#111;
+    }
+
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:25px 0;
+    }
+
+    .logo{
+      font-size:30px;
+      font-weight:800;
+    }
+
+    .nav-links{
+      display:flex;
+      list-style:none;
+      gap:20px;
+    }
+
+    .nav-links a{
+      text-decoration:none;
+      color:#111;
+      font-weight:600;
+    }
+
+    .hero{
+      background:linear-gradient(135deg,#0f172a,#1e293b);
+      color:white;
+      padding:70px;
+      border-radius:40px;
+      text-align:center;
+      margin:30px 0 60px;
+    }
+
+    .hero h1{
+      font-size:55px;
+      margin-bottom:15px;
+    }
+
+    .hero p{
+      color:#cbd5e1;
+    }
+
+    .contact-box{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:40px;
+      margin-bottom:80px;
+    }
+
+    .contact-info{
+      background:white;
+      padding:40px;
+      border-radius:30px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    .contact-info h2{
+      margin-bottom:20px;
+      font-size:35px;
+    }
+
+    .contact-info p{
+      margin-bottom:15px;
+      color:#555;
+      line-height:1.8;
+    }
+
+    .contact-form{
+      background:white;
+      padding:40px;
+      border-radius:30px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    .contact-form h2{
+      margin-bottom:20px;
+      font-size:35px;
+    }
+
+    .input-box{
+      margin-bottom:20px;
+    }
+
+    .input-box input,
+    .input-box textarea{
+      width:100%;
+      padding:15px;
+      border:1px solid #ddd;
+      border-radius:15px;
+      font-size:16px;
+      outline:none;
+    }
+
+    textarea{
+      resize:none;
+      height:140px;
+    }
+
+    .btn{
+      background:#2563eb;
+      color:white;
+      border:none;
+      padding:15px 35px;
+      border-radius:40px;
+      cursor:pointer;
+      font-weight:700;
+      transition:.3s;
+    }
+
+    .btn:hover{
+      background:#1d4ed8;
+    }
+
+    footer{
+      text-align:center;
+      padding:40px;
+      color:#777;
+    }
+
+    @media(max-width:768px){
+
+      nav{
+        flex-direction:column;
+        gap:20px;
+      }
+
+      .hero{
+        padding:40px 20px;
+      }
+
+      .hero h1{
+        font-size:40px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <nav>
+
+    <div class="logo">    XTRA CAR</div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+    </ul>
+
+  </nav>
+
+  <div class="hero">
+
+    <h1>Contact Us</h1>
+
+    <p>
+      We'd love to hear from you.
+      Send us your questions anytime.
+    </p>
+
+  </div>
+
+  <div class="contact-box">
+
+    <div class="contact-info">
+
+      <h2>Get In Touch</h2>
+
+      <p>📍Gaza Palestine</p>
+
+      <p>📞 +970 567 853 313</p>
+
+      <p>✉ cars@gmail.com</p>
+
+      <p>
+        Our team is ready to help you choose the perfect bicycle.
+
+      </p>
+
+    </div>
+
+    <div class="contact-form">
+
+      <h2>Send Message</h2>
+
+      <form>
+
+        <div class="input-box">
+          <input type="text" placeholder="Your Name">
+        </div>
+
+        <div class="input-box">
+          <input type="email" placeholder="Your Email">
+        </div>
+
+        <div class="input-box">
+          <textarea placeholder="Your Message"></textarea>
+        </div>
+
+        <button class="btn">
+          Send Message
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 XTRA CAR— All Rights Reserved
+  </footer>
+
+</div>
+
+</body>
+</html>
