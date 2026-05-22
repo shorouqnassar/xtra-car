@@ -1,11 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>XTRA CAR Store</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>XTRA CAR</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
@@ -32,20 +32,22 @@
       padding:0 20px;
     }
 
+    /* NAVBAR */
+
     nav{
       display:flex;
       justify-content:space-between;
       align-items:center;
       padding:25px 0;
+      background:white;
       position:sticky;
       top:0;
-      background:white;
       z-index:100;
-      box-shadow:0 2px 10px rgba(0,0,0,0.05);
+      box-shadow:0 2px 10px rgba(0,0,0,.05);
     }
 
     .logo{
-      font-size:30px;
+      font-size:32px;
       font-weight:800;
     }
 
@@ -53,34 +55,26 @@
       display:flex;
       gap:20px;
       list-style:none;
-      .nav-links a{
-  text-decoration:none;
-  color:inherit;
-  font-weight:600;
-  transition:.3s;
-}
-
-.nav-links a:hover{
-  color:#2563eb;
-}
     }
 
-    .nav-links li{
-      cursor:pointer;
+    .nav-links a{
+      text-decoration:none;
+      color:#111;
       font-weight:600;
       transition:.3s;
     }
 
-    .nav-links li:hover,
-    .nav-links li.active{
+    .nav-links a:hover{
       color:#2563eb;
     }
 
     .icons i{
-      font-size:18px;
       margin-left:15px;
       cursor:pointer;
+      font-size:18px;
     }
+
+    /* HERO */
 
     .hero{
       background:linear-gradient(135deg,#0f172a,#1e293b);
@@ -92,7 +86,6 @@
       align-items:center;
       flex-wrap:wrap;
       gap:40px;
-      overflow:hidden;
       color:white;
     }
 
@@ -102,41 +95,31 @@
     }
 
     .hero-text h1{
-      font-size:64px;
+      font-size:65px;
       line-height:1.1;
-      margin:20px 0;
+      margin-bottom:20px;
     }
 
-    .hero-text h1 span{
+    .hero-text span{
       color:#60a5fa;
     }
 
-    .hero p{
+    .hero-text p{
       color:#cbd5e1;
       font-size:18px;
       margin-bottom:25px;
     }
 
-    .hero img{
-      width:520px;
-      max-width:100%;
-      border-radius:30px;
-      transition:.4s;
-    }
-
-    .hero img:hover{
-      transform:scale(1.04);
-    }
-
     .btn{
+      padding:14px 30px;
+      border:none;
+      border-radius:40px;
       background:#2563eb;
       color:white;
-      border:none;
-      padding:14px 30px;
-      border-radius:40px;
-      cursor:pointer;
       font-weight:700;
+      cursor:pointer;
       transition:.3s;
+      margin-right:10px;
     }
 
     .btn:hover{
@@ -146,7 +129,6 @@
     .btn-outline{
       background:transparent;
       border:2px solid white;
-      margin-left:10px;
     }
 
     .btn-outline:hover{
@@ -154,10 +136,19 @@
       color:#111;
     }
 
+    .hero img{
+      width:500px;
+      max-width:100%;
+      border-radius:30px;
+      object-fit:cover;
+    }
+
+    /* FEATURES */
+
     .features{
       display:flex;
-      flex-wrap:wrap;
       justify-content:center;
+      flex-wrap:wrap;
       gap:15px;
       margin:50px 0;
     }
@@ -166,35 +157,37 @@
       background:white;
       padding:14px 24px;
       border-radius:40px;
-      box-shadow:0 5px 15px rgba(0,0,0,0.05);
+      box-shadow:0 5px 15px rgba(0,0,0,.05);
       font-weight:600;
     }
 
+    /* TITLE */
+
     .section-title{
       text-align:center;
-      font-size:38px;
-      margin:60px 0 35px;
+      font-size:40px;
+      margin:70px 0 40px;
       font-weight:800;
     }
+
+    /* PRODUCTS */
 
     .products{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
       gap:30px;
-      margin-bottom:50px;
     }
 
     .product{
       background:white;
       border-radius:30px;
       overflow:hidden;
+      box-shadow:0 10px 25px rgba(0,0,0,.06);
       transition:.4s;
-      box-shadow:0 10px 25px rgba(0,0,0,0.06);
     }
 
     .product:hover{
       transform:translateY(-10px);
-      box-shadow:0 20px 40px rgba(0,0,0,0.12);
     }
 
     .product img{
@@ -207,9 +200,9 @@
       padding:20px;
     }
 
-    .product h3{
-      font-size:24px;
+    .product-content h3{
       margin-bottom:10px;
+      font-size:24px;
     }
 
     .price{
@@ -219,37 +212,47 @@
       margin:15px 0;
     }
 
+    /* GALLERY */
+
     .gallery{
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
       gap:20px;
-      margin:50px 0;
+      margin:60px 0;
     }
 
     .gallery img{
       width:100%;
-      height:260px;
+      height:240px;
       object-fit:cover;
-      border-radius:30px;
+      border-radius:25px;
+      box-shadow:0 10px 25px rgba(0,0,0,.08);
       transition:.4s;
     }
 
     .gallery img:hover{
-      transform:scale(1.03);
+      transform:scale(1.05);
     }
+
+    /* NEWSLETTER */
 
     .newsletter{
       background:#0f172a;
       color:white;
-      text-align:center;
       padding:70px;
       border-radius:40px;
+      text-align:center;
       margin:70px 0;
     }
 
     .newsletter h2{
-      font-size:40px;
+      font-size:42px;
       margin-bottom:15px;
+    }
+
+    .newsletter p{
+      color:#cbd5e1;
+      margin-bottom:25px;
     }
 
     .newsletter input{
@@ -257,7 +260,6 @@
       border:none;
       border-radius:40px;
       width:300px;
-      margin-top:20px;
     }
 
     .newsletter button{
@@ -271,11 +273,15 @@
       cursor:pointer;
     }
 
+    /* FOOTER */
+
     footer{
       text-align:center;
       padding:40px;
       color:#777;
     }
+
+    /* RESPONSIVE */
 
     @media(max-width:768px){
 
@@ -317,19 +323,18 @@
 
 <div class="container">
 
+  <!-- NAVBAR -->
+
   <nav>
 
-    <div class="logo">    XTRA CAR</div>
+    <div class="logo">XTRA CAR</div>
 
     <ul class="nav-links">
-      <li class="active">Home</li>
-      <li>
-  <a href="about.html">About</a>
-</li>
+      <li><a href="#">Home</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="shop.html">Shop</a></li>
-      <li><a href="Gallery.html">Gallery</a></li>
-       <li><a href="contact.html">Contact</a></li>
-      
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
 
     <div class="icons">
@@ -352,22 +357,15 @@
       </h1>
 
       <p>
-        Premium bicycles built for speed, comfort and adventure.
+        Premium luxury cars built for speed and performance.
       </p>
 
-      <button class="btn">
-        Shop Now
-      </button>
-
-      <button class="btn btn-outline">
-        Explore
-      </button>
+      <button class="btn">Shop Now</button>
+      <button class="btn btn-outline">Explore</button>
 
     </div>
 
-    <img
-      src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop"
-    >
+    <img src="images/images1.jpg">
 
   </div>
 
@@ -375,13 +373,10 @@
 
   <div class="features">
 
-    <span class="feature">🚴 Premium Bikes</span>
-
+    <span class="feature">🚗 Luxury Cars</span>
     <span class="feature">⚡ Fast Delivery</span>
-
     <span class="feature">🔥 New Collection</span>
-
-    <span class="feature">🛠 Lifetime Service</span>
+    <span class="feature">🛠 Premium Service</span>
 
   </div>
 
@@ -393,17 +388,15 @@
 
     <div class="product">
 
-      <img src="https://images.unsplash.com/photo-1502161254066-6c74afbf07aa?q=80&w=1200&auto=format&fit=crop">
+      <img src="images/images1.jpg">
 
       <div class="product-content">
 
-        <h3>Mountain X1</h3>
+        <h3>Luxury Sport</h3>
 
         <div class="price">$1299</div>
 
-        <button class="btn">
-          View Details
-        </button>
+        <button class="btn">View Details</button>
 
       </div>
 
@@ -411,89 +404,31 @@
 
     <div class="product">
 
-      <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=1200&auto=format&fit=crop">
-
-      <div class="product-content">
-
-        <h3>Road Pro</h3>
-
-        <div class="price">$1499</div>
-
-        <button class="btn">
-          View Details
-        </button>
-
-      </div>
-
-    </div>
-
-    <div class="product">
-
-      <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1200&auto=format&fit=crop">
+      <img src="images/images2.jpg">
 
       <div class="product-content">
 
         <h3>Night Rider</h3>
 
+        <div class="price">$1499</div>
+
+        <button class="btn">View Details</button>
+
+      </div>
+
+    </div>
+
+    <div class="product">
+
+      <img src="images/images3.jpg">
+
+      <div class="product-content">
+
+        <h3>Urban Beast</h3>
+
         <div class="price">$1899</div>
 
-        <button class="btn">
-          View Details
-        </button>
-
-      </div>
-
-    </div>
-
-    <div class="product">
-
-      <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=1200&auto=format&fit=crop">
-
-      <div class="product-content">
-
-        <h3>Speed Beast</h3>
-
-        <div class="price">$2399</div>
-
-        <button class="btn">
-          View Details
-        </button>
-
-      </div>
-
-    </div>
-
-    <div class="product">
-
-      <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1200&auto=format&fit=crop">
-
-      <div class="product-content">
-
-        <h3>Urban Black</h3>
-
-        <div class="price">$999</div>
-
-        <button class="btn">
-          View Details
-        </button>
-
-      </div>
-
-    </div>
-
-    <div class="product">
-
-      <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?q=80&w=1200&auto=format&fit=crop">
-
-      <div class="product-content">
-
-        <h3>Racing Storm</h3>
-
-        <div class="price">$2799</div>
-
-        <button class="btn">
-          View Details
-        </button>
+        <button class="btn">View Details</button>
 
       </div>
 
@@ -507,17 +442,17 @@
 
   <div class="gallery">
 
-    <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=1200&auto=format&fit=crop">
+    <img src="images/images1.jpg">
+    <img src="images/images2.jpg">
+    <img src="images/images3.jpg">
+    <img src="images/images4.jpg">
+    <img src="images/images5.jpg">
+    <img src="images/images6.jpg">
+    <img src="images/images7.jpg">
 
-    <img src="https://images.unsplash.com/photo-1502161254066-6c74afbf07aa?q=80&w=1200&auto=format&fit=crop">
-
-    <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?q=80&w=1200&auto=format&fit=crop">
-
-    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop">
-
-    <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=1200&auto=format&fit=crop">
-
-    <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1200&auto=format&fit=crop">
+    
+    <img src="images/images1.jpg">
+   
 
   </div>
 
@@ -531,24 +466,19 @@
       Get the latest offers and new arrivals directly to your inbox.
     </p>
 
-    <div style="margin-top:25px;">
+    <input type="email" placeholder="Enter your email">
 
-      <input type="email" placeholder="Enter your email">
-
-      <button>
-        Subscribe
-      </button>
-
-    </div>
+    <button>Subscribe</button>
 
   </div>
 
+  <!-- FOOTER -->
+
   <footer>
-    © 2025 XTRA Bicycle — All Rights Reserved
+    © 2025 XTRA CAR — All Rights Reserved
   </footer>
 
 </div>
 
 </body>
 </html>
-
